@@ -86,4 +86,7 @@ Random effects of the final model (from `summary(m_final)`):
 
 The correlation between the random intercept and the random slope was -0.67, which suggests that children with a higher starting level tended to have a slightly slower growth rate.
 
+### Intraclass correlation (ICC)
+
+The ICC from the random-intercept model (m1) was 0.6857391 (0.69). This means that about 69% of the variation in `distance` that age did not explain was due to differences between children, and the rest variation within children. 
 
