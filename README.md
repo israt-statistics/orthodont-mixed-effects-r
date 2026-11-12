@@ -60,14 +60,21 @@ This suggests that the relationship between age and `distance` differs between b
  
 ### Final model
 
-| Term | Estimate | Std. Error | p-value |
-|---|---|---|---|
-| Intercept | 16.341 | 1.019 | <0.0001 |
-| `age` | 0.784 | 0.086 | <0.0001 |
-| `Sex` (Female) | 1.032 | 1.596 | 0.5237 |
-| `age:Sex` (Female) | -0.305 | 0.135 | 0.0264 |
+| Term | Estimate | Std. Error | 95% CI | p-value |
+|---|---|---|---|---|
+| Intercept | 16.341 | 1.019 | 14.313 to 18.368 | <0.0001 |
+| `age` | 0.784 | 0.086 | 0.613 to 0.956 | <0.0001 |
+| `Sex` (Female) | 1.032 | 1.596 | -2.254 to 4.319 | 0.5237 |
+| `age:Sex` (Female) | -0.305 | 0.135 | -0.573 to -0.037 | 0.0264 |
 
-Boys are the reference group. For boys, `distance` increased by about 0.78 mm per year. For girls, the growth rate was 0.30 mm per year lower (p = 0.0264), which gives an estimated growth rate of about 0.48 mm per year (0.784 - 0.305).
+Boys are the reference group.
+
+- **Intercept:** the estimated `distance` for boys at age 0 (16.34 mm). This is outside the observed age range (8 to 14 years), so it is not interpreted.
+- **`age`:** for boys, `distance` increased by about 0.78 mm per year (95% CI 0.613 to 0.956).
+- **`Sex` (Female):** the difference between girls and boys at age 0 was small and not significant (p = 0.5237).
+- **`age:Sex` (Female):** the growth rate of girls was 0.30 mm per year lower than that of boys (95% CI -0.573 to - 0.037, p = 0.0264). This means the growth rate differs between boys and girls.
+
+The estimated growth rate for girls was therefore about 0.48 mm per year (0.784 - 0.305).
 
 Random effects of the final model (from `summary(m_final)`):
 
@@ -78,3 +85,5 @@ Random effects of the final model (from `summary(m_final)`):
 | Residual | 1.31 |
 
 The correlation between the random intercept and the random slope was -0.67, which suggests that children with a higher starting level tended to have a slightly slower growth rate.
+
+
