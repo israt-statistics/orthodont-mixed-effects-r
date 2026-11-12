@@ -95,3 +95,7 @@ The ICC from the random-intercept model (m1) was 0.69. This means that about 69%
 ![Residuals vs fitted values](residuals_vs_fitted.png)
 
 The residuals vs fitted plot showed no clear pattern, and the points were scattered around zero. Two points had large residuals (above 3 and below -3), which may be outliers. 
+
+![Normal Q-Q plot of residuals](qq_residuals.png)
+
+The Q-Q plot shows that most points closely follow the straight line, meaning the residuals are approximately normally distributed, with only minor deviations at the extreme ends.
