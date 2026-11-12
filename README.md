@@ -58,3 +58,23 @@ Adding `Sex` significantly improve the model ( p = 0.0116 ).  Adding the age-by-
 
 This suggests that the relationship between age and `distance` differs between boys and girls.
  
+### Final model
+
+| Term | Estimate | Std. Error | p-value |
+|---|---|---|---|
+| Intercept | 16.341 | 1.019 | <0.0001 |
+| `age` | 0.784 | 0.086 | <0.0001 |
+| `Sex` (Female) | 1.032 | 1.596 | 0.5237 |
+| `age:Sex` (Female) | -0.305 | 0.135 | 0.0264 |
+
+Boys are the reference group. For boys, `distance` increased by about 0.78 mm per year. For girls, the growth rate was 0.30 mm per year lower (p = 0.0264), which gives an estimated growth rate of about 0.48 mm per year (0.784 - 0.305).
+
+Random effects of the final model (from `summary(m_final)`):
+
+| Component | Standard deviation |
+|---|---|
+| Intercept (between children) | 2.41 |
+| `age` slope (between children) | 0.18 |
+| Residual | 1.31 |
+
+The correlation between the random intercept and the random slope was -0.67, which suggests that children with a higher starting level tended to have a slightly slower growth rate.
