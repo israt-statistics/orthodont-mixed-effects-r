@@ -26,3 +26,16 @@ This project studies how jaw growth changes with age in children, and whether gr
 
 - `nlme` : fitting the mixed-effects models (`lme`) and the `Orthodont` data
 - `ggplot2` : plots
+
+## Results
+
+### Random effects structure
+
+| Model | df | AIC | BIC | LogLik | Test | L. Ratio | p-value | 
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Random intercept (m1) | 4 | 455.00 | 465.66 | -223.50 | | | |
+ Random intercept + slope (m2) | 6 | 454. 64 | 470.62 | -221.32 | 1 vs 2 | 4.37 | 0.1127 |
+
+ The Likelihood ratio Test (LRT = 4.37, P= 0.113> 0.05) showed no significant improvement after adding a random slope. The AIC values were also very similar (455.00 vs. 454.64).
+
+ Although the random slope model did not provide a significant improvement, I retained it in subsequent analyses to account for potential individual differences in growth rates among children. 
