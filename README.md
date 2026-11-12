@@ -29,6 +29,12 @@ This project studies how jaw growth changes with age in children, and whether gr
 
 ## Results
 
+### Growth trajectories
+
+![Individual growth trajectories by sex](growth_trajectories.png)
+
+Each thin lines is one child ( 16 boys, 11 girls); thick line shows the average linear trend for each sex. Most children show an upward trend, but starting levels and growth rates differ between children. Boys appear to grow faster than girls.
+
 ### Random effects structure
 
 | Model | df | AIC | BIC | LogLik | Test | L. Ratio | p-value | 
