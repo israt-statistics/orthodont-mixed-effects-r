@@ -103,3 +103,9 @@ The Q-Q plot shows that most points closely follow the straight line, meaning th
 ![Normal Q-Q plot of random intercepts](qq_random_effects.png)
 
 Most points closely follow the reference line, indicating that the random intercepts are approximately normally distributed, with only minor deviations at the tails. 
+
+## Predicted growth
+
+![Model-predicted average growth by sex](predicted_growth.png)
+
+The thick lines shows the average growth predicted by the final model for both sexes, and the thin lines show the observed trajectories of individual children. The line for boys is steeper than the line for girls, so the gap between them gets large with age. At age 8 the predicted `distance` was about 22.6 mm for boys and 21.2 mm for girls, and at age 14 it was about 27.3 mm for boys and 24.1 mm for girls.
