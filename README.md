@@ -99,3 +99,7 @@ The residuals vs fitted plot showed no clear pattern, and the points were scatte
 ![Normal Q-Q plot of residuals](qq_residuals.png)
 
 The Q-Q plot shows that most points closely follow the straight line, meaning the residuals are approximately normally distributed, with only minor deviations at the extreme ends.
+
+![Normal Q-Q plot of random intercepts](qq_random_effects.png)
+
+Most points closely follow the reference line, indicating that the random intercepts are approximately normally distributed, with only minor deviations at the tails. 
