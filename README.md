@@ -90,3 +90,8 @@ The correlation between the random intercept and the random slope was -0.67, whi
 
 The ICC from the random-intercept model (m1) was 0.6857391 (0.69). This means that about 69% of the variation in `distance` that age did not explain was due to differences between children, and the rest variation within children. 
 
+### Diagnostics
+
+![Residuals vs fitted values](residuals_vs_fitted.png)
+
+The residuals vs fitted plot showed no clear pattern, and the points were scattered around zero. Two points had large residuals (above 3 and below -3), which may be outliers. 
