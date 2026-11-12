@@ -45,3 +45,16 @@ Each thin lines is one child ( 16 boys, 11 girls); thick line shows the average 
  The Likelihood ratio Test (LRT = 4.37, P= 0.113> 0.05) showed no significant improvement after adding a random slope. The AIC values were also very similar (455.00 vs. 454.64).
 
  Although the random slope model did not provide a significant improvement, I retained it in subsequent analyses to account for potential individual differences in growth rates among children. 
+
+ ### Fixed effect structure
+
+ | Model | df | AIC | BIC | LogLik| Test | L.Ratio | p-value | 
+ | --- | --- | --- | --- | --- | --- | --- | --- |
+ | `age` (m_noSex) | 6 | 451.21 | 467.30 | -219.6058 | | | |
+ | `age + Sex ` (m_sex) | 7 | 446.8352 | 465.6101 | -216.4176 | 1 vs 2 | 6.37644 | 0.0116 |
+ | `age * Sex` (m_int) | 8 | 443.8352 | 465.2630 | -213.9030 | 2 vs 3 | 5.02921 | 0.0249 |
+
+Adding `Sex` significantly improve the model ( p = 0.0116 ).  Adding the age-by-sex interaction also provided a significant improvement ( p = 0.0249). The interaction model had the lowest AIC ( 443.8352) and also the lowest BIC (465.2630). Based on the likelihood ratio tests, AIC and BIC, I selected the interaction model as the final model. 
+
+This suggests that the relationship between age and `distance` differs between boys and girls.
+ 
