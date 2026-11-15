@@ -78,13 +78,11 @@ The estimated growth rate for girls was therefore about 0.48 mm per year (0.784 
 
 Random effects of the final model (from `summary(m_final)`):
 
-| Component | Standard deviation |
-|---|---|
-| Intercept (between children) | 2.41 |
-| `age` slope (between children) | 0.18 |
-| Residual | 1.31 |
-
-The correlation between the random intercept and the random slope was -0.67.
+| Component | Standard deviation | Corr. with intercept |
+|---|---| --- |
+| Intercept (between children) | 2.41 | |
+| `age` slope (between children) | 0.18 | -0.668 |
+| Residual | 1.31 | |
 
 ### Intraclass correlation (ICC)
 
