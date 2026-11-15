@@ -71,8 +71,8 @@ Boys are the reference group.
 
 - **Intercept:** the estimated `distance` for boys at age 0 (16.34 mm). This is outside the observed age range (8 to 14 years), so it is not interpreted.
 - **`age`:** for boys, `distance` increased by about 0.78 mm per year (95% CI 0.613 to 0.956).
-- **`Sex` (Female):** the difference between girls and boys at age 0 was small and not significant (p = 0.5237).
-- **`age:Sex` (Female):** the growth rate of girls was 0.30 mm per year lower than that of boys (95% CI -0.573 to - 0.037, p = 0.0264). This means the growth rate differs between boys and girls.
+- **`Sex` (Female):** the difference between girls and boys at age 0 was not significant (p = 0.5237).
+- **`age:Sex` (Female):** the growth rate of girls was -0.30 mm per year lower (95% CI -0.573 to - 0.037, p = 0.0264), meaning that girls grew more slowly. This shows that the growth rate differs between boys and girls.
 
 The estimated growth rate for girls was therefore about 0.48 mm per year (0.784 - 0.305).
 
